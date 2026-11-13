@@ -1,72 +1,71 @@
-# 🦖 Juego del Dinosaurio
+# 🦖 Dino Runner
 
-Clon del famoso juego del dinosaurio de Chrome (el que aparece cuando te quedas sin conexión), construido desde cero con **HTML, CSS y JavaScript puro**, sin frameworks ni librerías externas.
+A clone of Chrome's offline dinosaur game, built from scratch with **plain HTML, CSS and JavaScript**: no frameworks, no libraries.
 
-Fue uno de mis primeros proyectos mientras estaba aprendiendo a programar. Lo retomé para limpiarlo, corregirle bugs y dejarlo jugable en la web.
+It was one of my first projects while learning to code. I came back to it to clean it up, fix bugs and make it playable on the web.
 
-![Captura del juego](screenshot.png)
+![Screenshot](screenshot.png)
 
-## 🎮 Jugar
+## 🎮 Play
 
-👉 **[Jugar en vivo](https://m4nuel-ceron.github.io/Juego-del-Dinosaurio/)**
+👉 **[Play it live](https://m4nuel-ceron.github.io/Game-Dino/)**
 
-### Controles
+### Controls
 
-- **Escritorio:** presiona `ESPACIO` (o haz clic) para saltar.
-- **Móvil:** toca la pantalla para saltar.
-- Cuando pierdas, presiona `ESPACIO` o toca la pantalla de nuevo para reiniciar.
+- **Desktop:** press `SPACE` (or click) to jump.
+- **Mobile:** tap the screen to jump.
+- After a game over, press `SPACE` or tap again to restart.
 
-## ✨ Características
+## ✨ Features
 
-- Animación del dinosaurio corriendo con sprites.
-- Generación aleatoria de cactus (obstáculos) y nubes de fondo.
-- Detección de colisiones con cajas de margen ajustadas para que se sienta justo.
-- Dificultad progresiva: la velocidad del juego aumenta con el puntaje (5, 10 y 20 puntos), y el fondo cambia de color simulando el paso del día (mediodía, tarde, noche).
-- Contador de puntaje en tiempo real.
-- Reinicio rápido sin recargar la página.
-- Soporte táctil para jugar desde el celular.
+- Running animation with sprites.
+- Randomly spawned cacti (obstacles) and background clouds.
+- Collision detection with tuned hitbox margins, so it feels fair.
+- Progressive difficulty: speed increases at 5, 10 and 20 points, and the sky shifts from noon to afternoon to night.
+- Live score counter and instant restart without reloading.
+- Touch support for mobile.
 
-## 🛠️ Tecnologías
+## 🛠️ Tech
 
 - HTML5
-- CSS3 (animaciones con `@keyframes`, sprites con `background-position`)
-- JavaScript (vanilla, sin dependencias)
+- CSS3 (`@keyframes` animations, sprites with `background-position`)
+- JavaScript (vanilla, zero dependencies)
 
-## 🚀 Cómo ejecutarlo localmente
+## 🚀 Run locally
 
-No necesita instalación ni dependencias. Solo necesitas un servidor local, porque el juego carga imágenes por lo que abrir el `index.html` directamente (`file://`) puede fallar por restricciones del navegador.
+No install needed, but serve the folder: the game loads images, and opening `index.html` directly (`file://`) can be blocked by the browser.
 
 ```bash
-git clone https://github.com/M4NUEL-CERON/Juego-del-Dinosaurio.git
-cd Juego-del-Dinosaurio
+git clone https://github.com/M4NUEL-CERON/Game-Dino.git
+cd Game-Dino
 python3 -m http.server 8080
 ```
 
-Luego abre [http://localhost:8080](http://localhost:8080) en tu navegador.
+Then open [http://localhost:8080](http://localhost:8080).
 
-## 📁 Estructura del proyecto
+## 📁 Project structure
 
 ```
-Juego-del-Dinosaurio/
-├── index.html            # Estructura de la página
+Game-Dino/
+├── index.html          # Page markup
 ├── css/
-│   └── style.css        # Estilos y animaciones
+│   └── style.css       # Styles and animations
 ├── js/
-│   └── main.js           # Lógica del juego (bucle, física, colisiones, puntaje)
+│   └── main.js         # Game loop, physics, collisions, score
 ├── assets/
 │   └── img/
-│       ├── dino.png      # Sprite del dinosaurio
-│       ├── cactus1.png   # Sprite de obstáculo (cactus pequeño)
-│       ├── cactus2.png   # Sprite de obstáculo (cactus grande)
-│       ├── nube.png      # Sprite de nube
-│       └── suelo.png     # Sprite del suelo
-└── screenshot.png        # Captura usada en este README
+│       ├── dino.png    # Dinosaur sprite
+│       ├── cactus1.png # Obstacle sprite (small cactus)
+│       ├── cactus2.png # Obstacle sprite (large cactus)
+│       ├── nube.png    # Cloud sprite
+│       └── suelo.png   # Ground sprite
+└── screenshot.png      # Screenshot used in this README
 ```
 
-## 🙋 Autor
+## 🙋 Author
 
-**Manuel Cerón** — [@M4NUEL-CERON](https://github.com/M4NUEL-CERON)
+**Manuel Cerón** · [Portfolio](https://manuelceron.vercel.app) · [@M4NUEL-CERON](https://github.com/M4NUEL-CERON)
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la licencia [MIT](LICENSE).
+[MIT](LICENSE)
